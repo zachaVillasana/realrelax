@@ -4,8 +4,38 @@ export const Gallery = (props) => {
       <div className='container'>
         <div className='section-title'>
           <h2>Departamentos</h2>
+        </div>
+        <p>¡Chequea ahora la disponibilidad de nuestros departamos y no te pierdas nuestras ofertas!</p>
+        <div className="check">
+          <div className="group">
+            <span className="form-label">Destino</span>
+            <input className="control" type="text" placeholder="Región" />
+          </div>
+
+          <div className="group">
+            <span className="form-label">Check In</span>
+            <input className="control" type="date" required />
+          </div>
+
+          <div className="group">
+            <span className="form-label">Check Out</span>
+            <input className="control" type="date" required />
+          </div>
+
+          
+          <div className="hab">
+          <span className="form-label">Habitaciones</span>
+            <select className="select-arrow">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+          
+            <button className="btn btn-custom btn-lg left">Chequear</button>
           
         </div>
+
         <div className='row'>
           <div className='portfolio-items'>
             <div className='col-sm-6 col-md-4 col-lg-4'>
